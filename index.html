@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio - Prabhakar Patel </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aac57ec801.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <!-- <-------------------------------Navbar Section--------------------------------------> 
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <!-- <img src="./images/logo.png" class="logo" alt="logo"> -->
+                <div class="logo1"><a href=""><Span>Prab</Span>hakar.</a></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="header-text">
+                <p>Mern Stack Developer</p>
+                <h1>Hi, I'm <span>Prabhakar</span><br> Patel from India</h1>
+            </div>
+            <div class="box">
+                <img src="./images/background.jpg" class="shape">
+            </div>
+        
+        </div>
+    </div>
+ <!-- <-------------------------------About Section--------------------------------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png" alt="User.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am Prabhakar patel recent graduated from Guru Gobind Singh Inderprastha University, With a self starter Attitude.<br>
+                        <br>
+                        >> Seeking an entery level opportunity To work in challenging working environment that will give scope to increase my knowledge and skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Mern Stack Developer </span><br>Designing Web/App Interface</li>
+                            <li><span>Postman</span<br>As web api</li>
+                                <li><span>Html5/ Css3/ Javascript / Bootsrap</span><br>For Creating Responsive Website</li>
+                                <li><span>Vs Studio</span><br>As Tool for coding</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2022 - Jan 2023 </span><br>Full Stack Web Developer Intership In Devtown </li>
+                            <li><span>2021-2022</span><br>Web Devlopment On youtube</li>                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017-2021</span><br>Bhagwan Mahaveer College Of Engg. and Managment (INFORMATION TECHNOLOGY)</li>
+                                <li><span>2014</span><br>Class 10th from S.R.I.S</li>
+                                <li><span>2016</span><br>Class 12th From M.K.D</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <!-- <-------------------------------Services Section--------------------------------------> 
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>“ What separates design from art is that design is meant to be... functional. ”</p>
+                <a href="#"> Learn More </a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>“ People ignore design that ignores people. ”</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>MERN STACK</h2>
+                <p>“A successful website does three things:
+                    It attracts the right kinds of visitors.
+                    Guides them to the main services or product you offer.
+                    Collect Contact details for future ongoing relation.”</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>         
+ <!-- <-------------------------------Portfolio Section--------------------------------------> 
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="work-img">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Weather App Build on Html Css Javascript Bootsrap using rapid Api. In this we are check The current weather Of Any place and more Details rather Weather </p>
+                        <a href="https://weather-application45.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="work-img">
+                    <div class="layer">
+                        <h3>Instagram Landing Clone </h3>
+                        <p>In this App i am mainly work On frontend i am just cloning the Instagram landing page using Html5 and Css3</p>
+                        <a href="https://elegant-kulfi-2d3ca0.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="work-img">
+                    <div class="layer">
+                        <h3>Book Management System</h3>
+                        <p>Book Management system We are managing book details and the user details as well when someone issue book when someone return it to the particular time.And are dealing with severs Api and Database and language is node.js Api-Postaman Database-Mongodb</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" >See More</a>
+        </div>
+    </div>
+
+    <!-- <-------------------------------contact Section--------------------------------------> 
+        
+        <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>PrabhakarPatle@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>9599470348</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/prabhakarpatle"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/PrabhakarPatel"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prabhakar-patel-aa3675224"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <-------------------------------contact Section--------------------------------------> 
+    <div class="copyright">
+        <p>  Copyright &#169;2022- 2030 Prabhakar Patel <i class="fas fa-heart"></i> All Rights Reserved</p>
+    </div>
+</div>
+
+<script src="index.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMHlV-upJIHK8He3XjGpXOk-bbLpUz-BH0LiGpmZE8al9xiQmZa8ENGo8YyoMR4W9AuQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
